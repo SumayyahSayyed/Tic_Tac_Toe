@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    gap: 1em;
+    padding: 3em 0;
+
+}
+
+.results {
+    width: 100vw;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.527);
+    box-shadow: inset 50px 50px 200px rgba(0, 0, 0, 0.564);
+    position: absolute;
+    top: 300px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    align-items: center;
+    justify-content: center;
+}
+
+.hide {
+    display: none;
+}
+
+.label {
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 1.5px;
+}
+
+#reset {
+    padding: .5em 2em;
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: none;
+}
+
+.users {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    justify-content: center;
+
+    margin: 7em 0 5em 0;
+}
+
+.container-child {
+    width: 100px;
+    height: 100px;
+    border: 1px solid rgb(92, 92, 92);
+    background-color: white;
+}
+
+.block-1,
+.block-2,
+.block-3 {
+    border-top: none;
+}
+
+.block-3,
+.block-6,
+.block-9 {
+    border-right: none;
+}
+
+.block-7,
+.block-8,
+.block-9 {
+    border-bottom: none;
+}
+
+.block-1,
+.block-4,
+.block-7 {
+    border-left: none;
+}
+
+/* --------------- Hover affects --------------- */
+
+#reset:hover {
+    cursor: pointer;
+}
+
+.image-class:hover {
+    cursor: not-allowed;
+}
+
+.container-child:hover {
+    cursor: pointer;
+}
+
+.hover-blue:hover {
+    background-color: rgba(124, 169, 209, 0.502);
+}
+
+.hover-red:hover {
+    background-color: rgba(209, 124, 124, 0.502);
+}
